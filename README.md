@@ -1,2 +1,2 @@
 # CChess
-A simple chess game made only in C
+A simple chess game made solely in C
