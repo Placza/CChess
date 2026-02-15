@@ -83,10 +83,24 @@ CMakeFiles/MyRaylibGame.dir/src/game.c.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling C source to assembly CMakeFiles/MyRaylibGame.dir/src/game.c.s"
 	/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /home/emanuel/MISC/Other/Cchess/src/game.c -o CMakeFiles/MyRaylibGame.dir/src/game.c.s
 
+CMakeFiles/MyRaylibGame.dir/src/game_state.c.o: CMakeFiles/MyRaylibGame.dir/flags.make
+CMakeFiles/MyRaylibGame.dir/src/game_state.c.o: /home/emanuel/MISC/Other/Cchess/src/game_state.c
+CMakeFiles/MyRaylibGame.dir/src/game_state.c.o: CMakeFiles/MyRaylibGame.dir/compiler_depend.ts
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/emanuel/MISC/Other/Cchess/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Building C object CMakeFiles/MyRaylibGame.dir/src/game_state.c.o"
+	/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT CMakeFiles/MyRaylibGame.dir/src/game_state.c.o -MF CMakeFiles/MyRaylibGame.dir/src/game_state.c.o.d -o CMakeFiles/MyRaylibGame.dir/src/game_state.c.o -c /home/emanuel/MISC/Other/Cchess/src/game_state.c
+
+CMakeFiles/MyRaylibGame.dir/src/game_state.c.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing C source to CMakeFiles/MyRaylibGame.dir/src/game_state.c.i"
+	/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /home/emanuel/MISC/Other/Cchess/src/game_state.c > CMakeFiles/MyRaylibGame.dir/src/game_state.c.i
+
+CMakeFiles/MyRaylibGame.dir/src/game_state.c.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling C source to assembly CMakeFiles/MyRaylibGame.dir/src/game_state.c.s"
+	/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /home/emanuel/MISC/Other/Cchess/src/game_state.c -o CMakeFiles/MyRaylibGame.dir/src/game_state.c.s
+
 CMakeFiles/MyRaylibGame.dir/src/input.c.o: CMakeFiles/MyRaylibGame.dir/flags.make
 CMakeFiles/MyRaylibGame.dir/src/input.c.o: /home/emanuel/MISC/Other/Cchess/src/input.c
 CMakeFiles/MyRaylibGame.dir/src/input.c.o: CMakeFiles/MyRaylibGame.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/emanuel/MISC/Other/Cchess/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Building C object CMakeFiles/MyRaylibGame.dir/src/input.c.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/emanuel/MISC/Other/Cchess/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_3) "Building C object CMakeFiles/MyRaylibGame.dir/src/input.c.o"
 	/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT CMakeFiles/MyRaylibGame.dir/src/input.c.o -MF CMakeFiles/MyRaylibGame.dir/src/input.c.o.d -o CMakeFiles/MyRaylibGame.dir/src/input.c.o -c /home/emanuel/MISC/Other/Cchess/src/input.c
 
 CMakeFiles/MyRaylibGame.dir/src/input.c.i: cmake_force
@@ -97,10 +111,24 @@ CMakeFiles/MyRaylibGame.dir/src/input.c.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling C source to assembly CMakeFiles/MyRaylibGame.dir/src/input.c.s"
 	/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /home/emanuel/MISC/Other/Cchess/src/input.c -o CMakeFiles/MyRaylibGame.dir/src/input.c.s
 
+CMakeFiles/MyRaylibGame.dir/src/legal_moves.c.o: CMakeFiles/MyRaylibGame.dir/flags.make
+CMakeFiles/MyRaylibGame.dir/src/legal_moves.c.o: /home/emanuel/MISC/Other/Cchess/src/legal_moves.c
+CMakeFiles/MyRaylibGame.dir/src/legal_moves.c.o: CMakeFiles/MyRaylibGame.dir/compiler_depend.ts
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/emanuel/MISC/Other/Cchess/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_4) "Building C object CMakeFiles/MyRaylibGame.dir/src/legal_moves.c.o"
+	/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT CMakeFiles/MyRaylibGame.dir/src/legal_moves.c.o -MF CMakeFiles/MyRaylibGame.dir/src/legal_moves.c.o.d -o CMakeFiles/MyRaylibGame.dir/src/legal_moves.c.o -c /home/emanuel/MISC/Other/Cchess/src/legal_moves.c
+
+CMakeFiles/MyRaylibGame.dir/src/legal_moves.c.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing C source to CMakeFiles/MyRaylibGame.dir/src/legal_moves.c.i"
+	/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /home/emanuel/MISC/Other/Cchess/src/legal_moves.c > CMakeFiles/MyRaylibGame.dir/src/legal_moves.c.i
+
+CMakeFiles/MyRaylibGame.dir/src/legal_moves.c.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling C source to assembly CMakeFiles/MyRaylibGame.dir/src/legal_moves.c.s"
+	/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /home/emanuel/MISC/Other/Cchess/src/legal_moves.c -o CMakeFiles/MyRaylibGame.dir/src/legal_moves.c.s
+
 CMakeFiles/MyRaylibGame.dir/src/main.c.o: CMakeFiles/MyRaylibGame.dir/flags.make
 CMakeFiles/MyRaylibGame.dir/src/main.c.o: /home/emanuel/MISC/Other/Cchess/src/main.c
 CMakeFiles/MyRaylibGame.dir/src/main.c.o: CMakeFiles/MyRaylibGame.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/emanuel/MISC/Other/Cchess/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_3) "Building C object CMakeFiles/MyRaylibGame.dir/src/main.c.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/emanuel/MISC/Other/Cchess/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_5) "Building C object CMakeFiles/MyRaylibGame.dir/src/main.c.o"
 	/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT CMakeFiles/MyRaylibGame.dir/src/main.c.o -MF CMakeFiles/MyRaylibGame.dir/src/main.c.o.d -o CMakeFiles/MyRaylibGame.dir/src/main.c.o -c /home/emanuel/MISC/Other/Cchess/src/main.c
 
 CMakeFiles/MyRaylibGame.dir/src/main.c.i: cmake_force
@@ -111,10 +139,24 @@ CMakeFiles/MyRaylibGame.dir/src/main.c.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling C source to assembly CMakeFiles/MyRaylibGame.dir/src/main.c.s"
 	/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /home/emanuel/MISC/Other/Cchess/src/main.c -o CMakeFiles/MyRaylibGame.dir/src/main.c.s
 
+CMakeFiles/MyRaylibGame.dir/src/piece_moves.c.o: CMakeFiles/MyRaylibGame.dir/flags.make
+CMakeFiles/MyRaylibGame.dir/src/piece_moves.c.o: /home/emanuel/MISC/Other/Cchess/src/piece_moves.c
+CMakeFiles/MyRaylibGame.dir/src/piece_moves.c.o: CMakeFiles/MyRaylibGame.dir/compiler_depend.ts
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/emanuel/MISC/Other/Cchess/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_6) "Building C object CMakeFiles/MyRaylibGame.dir/src/piece_moves.c.o"
+	/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT CMakeFiles/MyRaylibGame.dir/src/piece_moves.c.o -MF CMakeFiles/MyRaylibGame.dir/src/piece_moves.c.o.d -o CMakeFiles/MyRaylibGame.dir/src/piece_moves.c.o -c /home/emanuel/MISC/Other/Cchess/src/piece_moves.c
+
+CMakeFiles/MyRaylibGame.dir/src/piece_moves.c.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing C source to CMakeFiles/MyRaylibGame.dir/src/piece_moves.c.i"
+	/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /home/emanuel/MISC/Other/Cchess/src/piece_moves.c > CMakeFiles/MyRaylibGame.dir/src/piece_moves.c.i
+
+CMakeFiles/MyRaylibGame.dir/src/piece_moves.c.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling C source to assembly CMakeFiles/MyRaylibGame.dir/src/piece_moves.c.s"
+	/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /home/emanuel/MISC/Other/Cchess/src/piece_moves.c -o CMakeFiles/MyRaylibGame.dir/src/piece_moves.c.s
+
 CMakeFiles/MyRaylibGame.dir/src/render.c.o: CMakeFiles/MyRaylibGame.dir/flags.make
 CMakeFiles/MyRaylibGame.dir/src/render.c.o: /home/emanuel/MISC/Other/Cchess/src/render.c
 CMakeFiles/MyRaylibGame.dir/src/render.c.o: CMakeFiles/MyRaylibGame.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/emanuel/MISC/Other/Cchess/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_4) "Building C object CMakeFiles/MyRaylibGame.dir/src/render.c.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/emanuel/MISC/Other/Cchess/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_7) "Building C object CMakeFiles/MyRaylibGame.dir/src/render.c.o"
 	/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT CMakeFiles/MyRaylibGame.dir/src/render.c.o -MF CMakeFiles/MyRaylibGame.dir/src/render.c.o.d -o CMakeFiles/MyRaylibGame.dir/src/render.c.o -c /home/emanuel/MISC/Other/Cchess/src/render.c
 
 CMakeFiles/MyRaylibGame.dir/src/render.c.i: cmake_force
@@ -128,7 +170,7 @@ CMakeFiles/MyRaylibGame.dir/src/render.c.s: cmake_force
 CMakeFiles/MyRaylibGame.dir/src/utils.c.o: CMakeFiles/MyRaylibGame.dir/flags.make
 CMakeFiles/MyRaylibGame.dir/src/utils.c.o: /home/emanuel/MISC/Other/Cchess/src/utils.c
 CMakeFiles/MyRaylibGame.dir/src/utils.c.o: CMakeFiles/MyRaylibGame.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/emanuel/MISC/Other/Cchess/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_5) "Building C object CMakeFiles/MyRaylibGame.dir/src/utils.c.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/emanuel/MISC/Other/Cchess/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_8) "Building C object CMakeFiles/MyRaylibGame.dir/src/utils.c.o"
 	/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT CMakeFiles/MyRaylibGame.dir/src/utils.c.o -MF CMakeFiles/MyRaylibGame.dir/src/utils.c.o.d -o CMakeFiles/MyRaylibGame.dir/src/utils.c.o -c /home/emanuel/MISC/Other/Cchess/src/utils.c
 
 CMakeFiles/MyRaylibGame.dir/src/utils.c.i: cmake_force
@@ -142,8 +184,11 @@ CMakeFiles/MyRaylibGame.dir/src/utils.c.s: cmake_force
 # Object files for target MyRaylibGame
 MyRaylibGame_OBJECTS = \
 "CMakeFiles/MyRaylibGame.dir/src/game.c.o" \
+"CMakeFiles/MyRaylibGame.dir/src/game_state.c.o" \
 "CMakeFiles/MyRaylibGame.dir/src/input.c.o" \
+"CMakeFiles/MyRaylibGame.dir/src/legal_moves.c.o" \
 "CMakeFiles/MyRaylibGame.dir/src/main.c.o" \
+"CMakeFiles/MyRaylibGame.dir/src/piece_moves.c.o" \
 "CMakeFiles/MyRaylibGame.dir/src/render.c.o" \
 "CMakeFiles/MyRaylibGame.dir/src/utils.c.o"
 
@@ -151,8 +196,11 @@ MyRaylibGame_OBJECTS = \
 MyRaylibGame_EXTERNAL_OBJECTS =
 
 MyRaylibGame: CMakeFiles/MyRaylibGame.dir/src/game.c.o
+MyRaylibGame: CMakeFiles/MyRaylibGame.dir/src/game_state.c.o
 MyRaylibGame: CMakeFiles/MyRaylibGame.dir/src/input.c.o
+MyRaylibGame: CMakeFiles/MyRaylibGame.dir/src/legal_moves.c.o
 MyRaylibGame: CMakeFiles/MyRaylibGame.dir/src/main.c.o
+MyRaylibGame: CMakeFiles/MyRaylibGame.dir/src/piece_moves.c.o
 MyRaylibGame: CMakeFiles/MyRaylibGame.dir/src/render.c.o
 MyRaylibGame: CMakeFiles/MyRaylibGame.dir/src/utils.c.o
 MyRaylibGame: CMakeFiles/MyRaylibGame.dir/build.make
@@ -163,7 +211,7 @@ MyRaylibGame: /usr/lib/x86_64-linux-gnu/libGLU.so
 MyRaylibGame: /usr/lib/x86_64-linux-gnu/librt.a
 MyRaylibGame: /usr/lib/x86_64-linux-gnu/libm.so
 MyRaylibGame: CMakeFiles/MyRaylibGame.dir/link.txt
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --bold --progress-dir=/home/emanuel/MISC/Other/Cchess/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_6) "Linking C executable MyRaylibGame"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --bold --progress-dir=/home/emanuel/MISC/Other/Cchess/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_9) "Linking C executable MyRaylibGame"
 	$(CMAKE_COMMAND) -E cmake_link_script CMakeFiles/MyRaylibGame.dir/link.txt --verbose=$(VERBOSE)
 
 # Rule to build all files generated by this target.

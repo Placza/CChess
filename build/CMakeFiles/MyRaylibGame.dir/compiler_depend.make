@@ -3,6 +3,43 @@
 
 CMakeFiles/MyRaylibGame.dir/src/game.c.o: /home/emanuel/MISC/Other/Cchess/src/game.c \
   /home/emanuel/MISC/Other/Cchess/inc/game.h \
+  /home/emanuel/MISC/Other/Cchess/inc/game_state.h \
+  /home/emanuel/MISC/Other/Cchess/inc/legal_moves.h \
+  /home/emanuel/MISC/Other/Cchess/inc/piece_moves.h \
+  /home/emanuel/MISC/Other/Cchess/inc/utils.h \
+  /home/emanuel/MISC/Other/Cchess/raylib/src/raylib.h \
+  /usr/include/features-time64.h \
+  /usr/include/features.h \
+  /usr/include/stdc-predef.h \
+  /usr/include/stdio.h \
+  /usr/include/x86_64-linux-gnu/bits/floatn-common.h \
+  /usr/include/x86_64-linux-gnu/bits/floatn.h \
+  /usr/include/x86_64-linux-gnu/bits/libc-header-start.h \
+  /usr/include/x86_64-linux-gnu/bits/long-double.h \
+  /usr/include/x86_64-linux-gnu/bits/stdio_lim.h \
+  /usr/include/x86_64-linux-gnu/bits/time64.h \
+  /usr/include/x86_64-linux-gnu/bits/timesize.h \
+  /usr/include/x86_64-linux-gnu/bits/types.h \
+  /usr/include/x86_64-linux-gnu/bits/types/FILE.h \
+  /usr/include/x86_64-linux-gnu/bits/types/__FILE.h \
+  /usr/include/x86_64-linux-gnu/bits/types/__fpos64_t.h \
+  /usr/include/x86_64-linux-gnu/bits/types/__fpos_t.h \
+  /usr/include/x86_64-linux-gnu/bits/types/__mbstate_t.h \
+  /usr/include/x86_64-linux-gnu/bits/types/cookie_io_functions_t.h \
+  /usr/include/x86_64-linux-gnu/bits/types/struct_FILE.h \
+  /usr/include/x86_64-linux-gnu/bits/typesizes.h \
+  /usr/include/x86_64-linux-gnu/bits/wordsize.h \
+  /usr/include/x86_64-linux-gnu/gnu/stubs-64.h \
+  /usr/include/x86_64-linux-gnu/gnu/stubs.h \
+  /usr/include/x86_64-linux-gnu/sys/cdefs.h \
+  /usr/lib/gcc/x86_64-linux-gnu/13/include/stdarg.h \
+  /usr/lib/gcc/x86_64-linux-gnu/13/include/stdbool.h \
+  /usr/lib/gcc/x86_64-linux-gnu/13/include/stddef.h
+
+CMakeFiles/MyRaylibGame.dir/src/game_state.c.o: /home/emanuel/MISC/Other/Cchess/src/game_state.c \
+  /home/emanuel/MISC/Other/Cchess/inc/game.h \
+  /home/emanuel/MISC/Other/Cchess/inc/game_state.h \
+  /home/emanuel/MISC/Other/Cchess/inc/legal_moves.h \
   /home/emanuel/MISC/Other/Cchess/inc/utils.h \
   /home/emanuel/MISC/Other/Cchess/raylib/src/raylib.h \
   /usr/include/features-time64.h \
@@ -65,10 +102,53 @@ CMakeFiles/MyRaylibGame.dir/src/input.c.o: /home/emanuel/MISC/Other/Cchess/src/i
   /usr/lib/gcc/x86_64-linux-gnu/13/include/stdbool.h \
   /usr/lib/gcc/x86_64-linux-gnu/13/include/stddef.h
 
+CMakeFiles/MyRaylibGame.dir/src/legal_moves.c.o: /home/emanuel/MISC/Other/Cchess/src/legal_moves.c \
+  /home/emanuel/MISC/Other/Cchess/inc/game.h \
+  /home/emanuel/MISC/Other/Cchess/inc/legal_moves.h \
+  /home/emanuel/MISC/Other/Cchess/inc/piece_moves.h \
+  /home/emanuel/MISC/Other/Cchess/inc/utils.h \
+  /home/emanuel/MISC/Other/Cchess/raylib/src/raylib.h \
+  /usr/include/features-time64.h \
+  /usr/include/features.h \
+  /usr/include/stdc-predef.h \
+  /usr/include/stdio.h \
+  /usr/include/x86_64-linux-gnu/bits/floatn-common.h \
+  /usr/include/x86_64-linux-gnu/bits/floatn.h \
+  /usr/include/x86_64-linux-gnu/bits/libc-header-start.h \
+  /usr/include/x86_64-linux-gnu/bits/long-double.h \
+  /usr/include/x86_64-linux-gnu/bits/stdio_lim.h \
+  /usr/include/x86_64-linux-gnu/bits/time64.h \
+  /usr/include/x86_64-linux-gnu/bits/timesize.h \
+  /usr/include/x86_64-linux-gnu/bits/types.h \
+  /usr/include/x86_64-linux-gnu/bits/types/FILE.h \
+  /usr/include/x86_64-linux-gnu/bits/types/__FILE.h \
+  /usr/include/x86_64-linux-gnu/bits/types/__fpos64_t.h \
+  /usr/include/x86_64-linux-gnu/bits/types/__fpos_t.h \
+  /usr/include/x86_64-linux-gnu/bits/types/__mbstate_t.h \
+  /usr/include/x86_64-linux-gnu/bits/types/cookie_io_functions_t.h \
+  /usr/include/x86_64-linux-gnu/bits/types/struct_FILE.h \
+  /usr/include/x86_64-linux-gnu/bits/typesizes.h \
+  /usr/include/x86_64-linux-gnu/bits/wordsize.h \
+  /usr/include/x86_64-linux-gnu/gnu/stubs-64.h \
+  /usr/include/x86_64-linux-gnu/gnu/stubs.h \
+  /usr/include/x86_64-linux-gnu/sys/cdefs.h \
+  /usr/lib/gcc/x86_64-linux-gnu/13/include/stdarg.h \
+  /usr/lib/gcc/x86_64-linux-gnu/13/include/stdbool.h \
+  /usr/lib/gcc/x86_64-linux-gnu/13/include/stddef.h
+
 CMakeFiles/MyRaylibGame.dir/src/main.c.o: /home/emanuel/MISC/Other/Cchess/src/main.c \
   /home/emanuel/MISC/Other/Cchess/inc/game.h \
   /home/emanuel/MISC/Other/Cchess/inc/input.h \
   /home/emanuel/MISC/Other/Cchess/inc/render.h \
+  /home/emanuel/MISC/Other/Cchess/raylib/src/raylib.h \
+  /usr/include/stdc-predef.h \
+  /usr/lib/gcc/x86_64-linux-gnu/13/include/stdarg.h \
+  /usr/lib/gcc/x86_64-linux-gnu/13/include/stdbool.h
+
+CMakeFiles/MyRaylibGame.dir/src/piece_moves.c.o: /home/emanuel/MISC/Other/Cchess/src/piece_moves.c \
+  /home/emanuel/MISC/Other/Cchess/inc/game.h \
+  /home/emanuel/MISC/Other/Cchess/inc/piece_moves.h \
+  /home/emanuel/MISC/Other/Cchess/inc/utils.h \
   /home/emanuel/MISC/Other/Cchess/raylib/src/raylib.h \
   /usr/include/stdc-predef.h \
   /usr/lib/gcc/x86_64-linux-gnu/13/include/stdarg.h \
@@ -108,43 +188,49 @@ CMakeFiles/MyRaylibGame.dir/src/render.c.o: /home/emanuel/MISC/Other/Cchess/src/
   /usr/lib/gcc/x86_64-linux-gnu/13/include/stddef.h
 
 CMakeFiles/MyRaylibGame.dir/src/utils.c.o: /home/emanuel/MISC/Other/Cchess/src/utils.c \
+  /home/emanuel/MISC/Other/Cchess/inc/game.h \
   /home/emanuel/MISC/Other/Cchess/inc/utils.h \
-  /usr/include/stdc-predef.h
+  /home/emanuel/MISC/Other/Cchess/raylib/src/raylib.h \
+  /usr/include/stdc-predef.h \
+  /usr/lib/gcc/x86_64-linux-gnu/13/include/stdarg.h \
+  /usr/lib/gcc/x86_64-linux-gnu/13/include/stdbool.h
 
 
 /home/emanuel/MISC/Other/Cchess/src/utils.c:
+
+/home/emanuel/MISC/Other/Cchess/src/piece_moves.c:
 
 /home/emanuel/MISC/Other/Cchess/inc/render.h:
 
 /home/emanuel/MISC/Other/Cchess/src/main.c:
 
+/home/emanuel/MISC/Other/Cchess/src/legal_moves.c:
+
+/home/emanuel/MISC/Other/Cchess/src/game_state.c:
+
 /usr/lib/gcc/x86_64-linux-gnu/13/include/stdbool.h:
 
-/home/emanuel/MISC/Other/Cchess/inc/game.h:
+/home/emanuel/MISC/Other/Cchess/src/input.c:
 
-/home/emanuel/MISC/Other/Cchess/src/render.c:
+/usr/lib/gcc/x86_64-linux-gnu/13/include/stdarg.h:
 
-/usr/include/stdc-predef.h:
+/usr/include/x86_64-linux-gnu/sys/cdefs.h:
 
 /usr/lib/gcc/x86_64-linux-gnu/13/include/stddef.h:
 
 /usr/include/x86_64-linux-gnu/bits/floatn-common.h:
 
+/home/emanuel/MISC/Other/Cchess/inc/game_state.h:
+
 /usr/include/stdio.h:
+
+/home/emanuel/MISC/Other/Cchess/src/render.c:
+
+/usr/include/stdc-predef.h:
 
 /usr/include/x86_64-linux-gnu/bits/timesize.h:
 
-/usr/include/x86_64-linux-gnu/bits/long-double.h:
-
-/usr/include/features.h:
-
-/usr/include/x86_64-linux-gnu/bits/types/FILE.h:
-
 /usr/include/x86_64-linux-gnu/bits/floatn.h:
-
-/home/emanuel/MISC/Other/Cchess/src/input.c:
-
-/usr/lib/gcc/x86_64-linux-gnu/13/include/stdarg.h:
 
 /usr/include/x86_64-linux-gnu/bits/libc-header-start.h:
 
@@ -152,7 +238,25 @@ CMakeFiles/MyRaylibGame.dir/src/utils.c.o: /home/emanuel/MISC/Other/Cchess/src/u
 
 /usr/include/x86_64-linux-gnu/bits/wordsize.h:
 
-/usr/include/x86_64-linux-gnu/sys/cdefs.h:
+/usr/include/x86_64-linux-gnu/bits/types/FILE.h:
+
+/usr/include/features.h:
+
+/home/emanuel/MISC/Other/Cchess/inc/legal_moves.h:
+
+/home/emanuel/MISC/Other/Cchess/inc/game.h:
+
+/home/emanuel/MISC/Other/Cchess/inc/piece_moves.h:
+
+/usr/include/x86_64-linux-gnu/bits/long-double.h:
+
+/usr/include/x86_64-linux-gnu/gnu/stubs.h:
+
+/home/emanuel/MISC/Other/Cchess/src/game.c:
+
+/usr/include/x86_64-linux-gnu/bits/stdio_lim.h:
+
+/usr/include/x86_64-linux-gnu/bits/types.h:
 
 /home/emanuel/MISC/Other/Cchess/raylib/src/raylib.h:
 
@@ -177,11 +281,3 @@ CMakeFiles/MyRaylibGame.dir/src/utils.c.o: /home/emanuel/MISC/Other/Cchess/src/u
 /usr/include/x86_64-linux-gnu/bits/types/struct_FILE.h:
 
 /usr/include/x86_64-linux-gnu/bits/typesizes.h:
-
-/usr/include/x86_64-linux-gnu/bits/stdio_lim.h:
-
-/home/emanuel/MISC/Other/Cchess/src/game.c:
-
-/usr/include/x86_64-linux-gnu/bits/types.h:
-
-/usr/include/x86_64-linux-gnu/gnu/stubs.h:

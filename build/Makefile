@@ -257,6 +257,30 @@ src/game.c.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/MyRaylibGame.dir/build.make CMakeFiles/MyRaylibGame.dir/src/game.c.s
 .PHONY : src/game.c.s
 
+src/game_state.o: src/game_state.c.o
+.PHONY : src/game_state.o
+
+# target to build an object file
+src/game_state.c.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/MyRaylibGame.dir/build.make CMakeFiles/MyRaylibGame.dir/src/game_state.c.o
+.PHONY : src/game_state.c.o
+
+src/game_state.i: src/game_state.c.i
+.PHONY : src/game_state.i
+
+# target to preprocess a source file
+src/game_state.c.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/MyRaylibGame.dir/build.make CMakeFiles/MyRaylibGame.dir/src/game_state.c.i
+.PHONY : src/game_state.c.i
+
+src/game_state.s: src/game_state.c.s
+.PHONY : src/game_state.s
+
+# target to generate assembly for a file
+src/game_state.c.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/MyRaylibGame.dir/build.make CMakeFiles/MyRaylibGame.dir/src/game_state.c.s
+.PHONY : src/game_state.c.s
+
 src/input.o: src/input.c.o
 .PHONY : src/input.o
 
@@ -281,6 +305,30 @@ src/input.c.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/MyRaylibGame.dir/build.make CMakeFiles/MyRaylibGame.dir/src/input.c.s
 .PHONY : src/input.c.s
 
+src/legal_moves.o: src/legal_moves.c.o
+.PHONY : src/legal_moves.o
+
+# target to build an object file
+src/legal_moves.c.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/MyRaylibGame.dir/build.make CMakeFiles/MyRaylibGame.dir/src/legal_moves.c.o
+.PHONY : src/legal_moves.c.o
+
+src/legal_moves.i: src/legal_moves.c.i
+.PHONY : src/legal_moves.i
+
+# target to preprocess a source file
+src/legal_moves.c.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/MyRaylibGame.dir/build.make CMakeFiles/MyRaylibGame.dir/src/legal_moves.c.i
+.PHONY : src/legal_moves.c.i
+
+src/legal_moves.s: src/legal_moves.c.s
+.PHONY : src/legal_moves.s
+
+# target to generate assembly for a file
+src/legal_moves.c.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/MyRaylibGame.dir/build.make CMakeFiles/MyRaylibGame.dir/src/legal_moves.c.s
+.PHONY : src/legal_moves.c.s
+
 src/main.o: src/main.c.o
 .PHONY : src/main.o
 
@@ -304,6 +352,30 @@ src/main.s: src/main.c.s
 src/main.c.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/MyRaylibGame.dir/build.make CMakeFiles/MyRaylibGame.dir/src/main.c.s
 .PHONY : src/main.c.s
+
+src/piece_moves.o: src/piece_moves.c.o
+.PHONY : src/piece_moves.o
+
+# target to build an object file
+src/piece_moves.c.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/MyRaylibGame.dir/build.make CMakeFiles/MyRaylibGame.dir/src/piece_moves.c.o
+.PHONY : src/piece_moves.c.o
+
+src/piece_moves.i: src/piece_moves.c.i
+.PHONY : src/piece_moves.i
+
+# target to preprocess a source file
+src/piece_moves.c.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/MyRaylibGame.dir/build.make CMakeFiles/MyRaylibGame.dir/src/piece_moves.c.i
+.PHONY : src/piece_moves.c.i
+
+src/piece_moves.s: src/piece_moves.c.s
+.PHONY : src/piece_moves.s
+
+# target to generate assembly for a file
+src/piece_moves.c.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/MyRaylibGame.dir/build.make CMakeFiles/MyRaylibGame.dir/src/piece_moves.c.s
+.PHONY : src/piece_moves.c.s
 
 src/render.o: src/render.c.o
 .PHONY : src/render.o
@@ -374,12 +446,21 @@ help:
 	@echo "... src/game.o"
 	@echo "... src/game.i"
 	@echo "... src/game.s"
+	@echo "... src/game_state.o"
+	@echo "... src/game_state.i"
+	@echo "... src/game_state.s"
 	@echo "... src/input.o"
 	@echo "... src/input.i"
 	@echo "... src/input.s"
+	@echo "... src/legal_moves.o"
+	@echo "... src/legal_moves.i"
+	@echo "... src/legal_moves.s"
 	@echo "... src/main.o"
 	@echo "... src/main.i"
 	@echo "... src/main.s"
+	@echo "... src/piece_moves.o"
+	@echo "... src/piece_moves.i"
+	@echo "... src/piece_moves.s"
 	@echo "... src/render.o"
 	@echo "... src/render.i"
 	@echo "... src/render.s"

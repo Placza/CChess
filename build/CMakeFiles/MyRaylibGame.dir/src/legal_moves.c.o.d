@@ -1,10 +1,12 @@
-CMakeFiles/MyRaylibGame.dir/src/game.c.o: \
- /home/emanuel/MISC/Other/Cchess/src/game.c /usr/include/stdc-predef.h \
+CMakeFiles/MyRaylibGame.dir/src/legal_moves.c.o: \
+ /home/emanuel/MISC/Other/Cchess/src/legal_moves.c \
+ /usr/include/stdc-predef.h \
+ /home/emanuel/MISC/Other/Cchess/inc/legal_moves.h \
  /home/emanuel/MISC/Other/Cchess/inc/game.h \
  /home/emanuel/MISC/Other/Cchess/raylib/src/raylib.h \
  /usr/lib/gcc/x86_64-linux-gnu/13/include/stdarg.h \
  /usr/lib/gcc/x86_64-linux-gnu/13/include/stdbool.h \
- /home/emanuel/MISC/Other/Cchess/inc/utils.h \
+ /home/emanuel/MISC/Other/Cchess/inc/piece_moves.h \
  /home/emanuel/MISC/Other/Cchess/inc/game.h /usr/include/stdio.h \
  /usr/include/x86_64-linux-gnu/bits/libc-header-start.h \
  /usr/include/features.h /usr/include/features-time64.h \
@@ -28,6 +30,4 @@ CMakeFiles/MyRaylibGame.dir/src/game.c.o: \
  /usr/include/x86_64-linux-gnu/bits/stdio_lim.h \
  /usr/include/x86_64-linux-gnu/bits/floatn.h \
  /usr/include/x86_64-linux-gnu/bits/floatn-common.h \
- /home/emanuel/MISC/Other/Cchess/inc/piece_moves.h \
- /home/emanuel/MISC/Other/Cchess/inc/legal_moves.h \
- /home/emanuel/MISC/Other/Cchess/inc/game_state.h
+ /home/emanuel/MISC/Other/Cchess/inc/utils.h
