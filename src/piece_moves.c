@@ -5,7 +5,7 @@
 
 
 
-void add_valid_move(int x, int y)
+static void add_valid_move(int x, int y)
 {
   if (x > 7 || x < 0 || y > 7 || y < 0) return;
   game.valid_moves[game.valid_moves_top][0] = x;
@@ -15,7 +15,7 @@ void add_valid_move(int x, int y)
 
 
 
-void check_valid_moves_pawn(int color)
+static void check_valid_moves_pawn(int color)
 {
   piece above = game.board[game.p_start_y - color][game.p_start_x];
   piece twice_above = game.board[game.p_start_y - 2*color][game.p_start_x];
@@ -41,7 +41,7 @@ void check_valid_moves_pawn(int color)
 
 
 
-void check_valid_moves_rook()
+static void check_valid_moves_rook()
 {
   for (int i = 1; i <= 7 - game.p_start_x; i++)
   {
@@ -96,7 +96,7 @@ void check_valid_moves_rook()
 
 
 
-void check_valid_moves_bishop()
+static void check_valid_moves_bishop()
 {
   int top_r = min(7 - game.p_start_x, game.p_start_y);
   for (int i = 1; i <= top_r; i++)
@@ -156,7 +156,7 @@ void check_valid_moves_bishop()
 
 
 
-void check_valid_moves_knight()
+static void check_valid_moves_knight()
 {
   piece p;
   int pos_x;
@@ -227,7 +227,7 @@ void check_valid_moves_knight()
 
 
 
-void check_valid_moves_queen()
+static void check_valid_moves_queen()
 {
   check_valid_moves_rook();
   check_valid_moves_bishop();
@@ -237,7 +237,7 @@ void check_valid_moves_queen()
 
 
 
-void check_valid_moves_king()
+static void check_valid_moves_king()
 {
   piece p;
   int pos_x;
