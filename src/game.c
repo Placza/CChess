@@ -144,6 +144,6 @@ void change_promotion(int p)
 bool is_to_be_promoted()
 {
   piece p = game.board[game.p_start_y][game.p_start_x];
-  if (p == W_PAWN && game.p_start_y == 1) return 1;
+  if (p == W_PAWN && game.p_start_y == 1 || p == B_PAWN && game.p_start_y == 6) return 1;
   return 0;
 }
