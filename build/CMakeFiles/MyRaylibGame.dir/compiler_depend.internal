@@ -145,6 +145,7 @@ CMakeFiles/MyRaylibGame.dir/src/main.c.o
  /home/emanuel/MISC/Other/Cchess/inc/game.h
  /home/emanuel/MISC/Other/Cchess/inc/input.h
  /home/emanuel/MISC/Other/Cchess/inc/render.h
+ /home/emanuel/MISC/Other/Cchess/inc/resource.h
  /home/emanuel/MISC/Other/Cchess/raylib/src/raylib.h
  /usr/include/stdc-predef.h
  /usr/lib/gcc/x86_64-linux-gnu/13/include/stdarg.h
@@ -165,6 +166,7 @@ CMakeFiles/MyRaylibGame.dir/src/render.c.o
  /home/emanuel/MISC/Other/Cchess/inc/game.h
  /home/emanuel/MISC/Other/Cchess/inc/input.h
  /home/emanuel/MISC/Other/Cchess/inc/render.h
+ /home/emanuel/MISC/Other/Cchess/inc/resource.h
  /home/emanuel/MISC/Other/Cchess/raylib/src/raylib.h
  /usr/include/features-time64.h
  /usr/include/features.h
@@ -193,6 +195,14 @@ CMakeFiles/MyRaylibGame.dir/src/render.c.o
  /usr/lib/gcc/x86_64-linux-gnu/13/include/stdarg.h
  /usr/lib/gcc/x86_64-linux-gnu/13/include/stdbool.h
  /usr/lib/gcc/x86_64-linux-gnu/13/include/stddef.h
+
+CMakeFiles/MyRaylibGame.dir/src/resource.c.o
+ /home/emanuel/MISC/Other/Cchess/src/resource.c
+ /home/emanuel/MISC/Other/Cchess/inc/resource.h
+ /home/emanuel/MISC/Other/Cchess/raylib/src/raylib.h
+ /usr/include/stdc-predef.h
+ /usr/lib/gcc/x86_64-linux-gnu/13/include/stdarg.h
+ /usr/lib/gcc/x86_64-linux-gnu/13/include/stdbool.h
 
 CMakeFiles/MyRaylibGame.dir/src/utils.c.o
  /home/emanuel/MISC/Other/Cchess/src/utils.c

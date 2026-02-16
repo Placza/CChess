@@ -35,8 +35,8 @@ void handle_input()
   if (IsMouseButtonPressed(MOUSE_BUTTON_LEFT))
   {
     Vector2 mouse_pos = GetMousePosition(); 
-    int x = (int) mouse_pos.x / 63;
-    int y = (int) mouse_pos.y / 63;
+    int x = (int) (mouse_pos.x - 30) / 63;
+    int y = (int) (mouse_pos.y - 30) / 63;
 
     switch (state) 
     {

@@ -5,4 +5,5 @@ CMakeFiles/MyRaylibGame.dir/src/main.c.o: \
  /usr/lib/gcc/x86_64-linux-gnu/13/include/stdbool.h \
  /home/emanuel/MISC/Other/Cchess/inc/game.h \
  /home/emanuel/MISC/Other/Cchess/inc/input.h \
- /home/emanuel/MISC/Other/Cchess/inc/render.h
+ /home/emanuel/MISC/Other/Cchess/inc/render.h \
+ /home/emanuel/MISC/Other/Cchess/inc/resource.h

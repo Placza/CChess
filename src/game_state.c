@@ -37,7 +37,16 @@ void check_capture()
 {
   piece target = game.board[game.p_end_y][game.p_end_x];
   if (is_enemy(target))
-    printf("captured: %d\n", target);
+    if (game.turn == 0)
+    {
+      game.w_captured[game.w_captured_top] = target;
+      game.w_captured_top++; 
+    }
+    else 
+    {
+      game.b_captured[game.b_captured_top] = target;
+      game.b_captured_top++;
+    }
 }
 
 

@@ -15,6 +15,7 @@ set(CMAKE_DEPENDS_DEPENDENCY_FILES
   "/home/emanuel/MISC/Other/Cchess/src/main.c" "CMakeFiles/MyRaylibGame.dir/src/main.c.o" "gcc" "CMakeFiles/MyRaylibGame.dir/src/main.c.o.d"
   "/home/emanuel/MISC/Other/Cchess/src/piece_moves.c" "CMakeFiles/MyRaylibGame.dir/src/piece_moves.c.o" "gcc" "CMakeFiles/MyRaylibGame.dir/src/piece_moves.c.o.d"
   "/home/emanuel/MISC/Other/Cchess/src/render.c" "CMakeFiles/MyRaylibGame.dir/src/render.c.o" "gcc" "CMakeFiles/MyRaylibGame.dir/src/render.c.o.d"
+  "/home/emanuel/MISC/Other/Cchess/src/resource.c" "CMakeFiles/MyRaylibGame.dir/src/resource.c.o" "gcc" "CMakeFiles/MyRaylibGame.dir/src/resource.c.o.d"
   "/home/emanuel/MISC/Other/Cchess/src/utils.c" "CMakeFiles/MyRaylibGame.dir/src/utils.c.o" "gcc" "CMakeFiles/MyRaylibGame.dir/src/utils.c.o.d"
   )
 

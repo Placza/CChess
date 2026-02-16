@@ -13,6 +13,8 @@ file(REMOVE_RECURSE
   "CMakeFiles/MyRaylibGame.dir/src/piece_moves.c.o.d"
   "CMakeFiles/MyRaylibGame.dir/src/render.c.o"
   "CMakeFiles/MyRaylibGame.dir/src/render.c.o.d"
+  "CMakeFiles/MyRaylibGame.dir/src/resource.c.o"
+  "CMakeFiles/MyRaylibGame.dir/src/resource.c.o.d"
   "CMakeFiles/MyRaylibGame.dir/src/utils.c.o"
   "CMakeFiles/MyRaylibGame.dir/src/utils.c.o.d"
   "MyRaylibGame"

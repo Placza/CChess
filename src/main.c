@@ -2,6 +2,7 @@
 #include "game.h"
 #include "input.h"
 #include "render.h"
+#include "resource.h"
 
 
 int main(void)
@@ -21,6 +22,7 @@ int main(void)
   }
 
   CloseWindow();
+  unload_assets();
 
   return 0;
 }

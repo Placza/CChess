@@ -401,6 +401,30 @@ src/render.c.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/MyRaylibGame.dir/build.make CMakeFiles/MyRaylibGame.dir/src/render.c.s
 .PHONY : src/render.c.s
 
+src/resource.o: src/resource.c.o
+.PHONY : src/resource.o
+
+# target to build an object file
+src/resource.c.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/MyRaylibGame.dir/build.make CMakeFiles/MyRaylibGame.dir/src/resource.c.o
+.PHONY : src/resource.c.o
+
+src/resource.i: src/resource.c.i
+.PHONY : src/resource.i
+
+# target to preprocess a source file
+src/resource.c.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/MyRaylibGame.dir/build.make CMakeFiles/MyRaylibGame.dir/src/resource.c.i
+.PHONY : src/resource.c.i
+
+src/resource.s: src/resource.c.s
+.PHONY : src/resource.s
+
+# target to generate assembly for a file
+src/resource.c.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/MyRaylibGame.dir/build.make CMakeFiles/MyRaylibGame.dir/src/resource.c.s
+.PHONY : src/resource.c.s
+
 src/utils.o: src/utils.c.o
 .PHONY : src/utils.o
 
@@ -464,6 +488,9 @@ help:
 	@echo "... src/render.o"
 	@echo "... src/render.i"
 	@echo "... src/render.s"
+	@echo "... src/resource.o"
+	@echo "... src/resource.i"
+	@echo "... src/resource.s"
 	@echo "... src/utils.o"
 	@echo "... src/utils.i"
 	@echo "... src/utils.s"

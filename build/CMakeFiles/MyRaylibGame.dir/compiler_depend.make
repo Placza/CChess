@@ -140,6 +140,7 @@ CMakeFiles/MyRaylibGame.dir/src/main.c.o: /home/emanuel/MISC/Other/Cchess/src/ma
   /home/emanuel/MISC/Other/Cchess/inc/game.h \
   /home/emanuel/MISC/Other/Cchess/inc/input.h \
   /home/emanuel/MISC/Other/Cchess/inc/render.h \
+  /home/emanuel/MISC/Other/Cchess/inc/resource.h \
   /home/emanuel/MISC/Other/Cchess/raylib/src/raylib.h \
   /usr/include/stdc-predef.h \
   /usr/lib/gcc/x86_64-linux-gnu/13/include/stdarg.h \
@@ -158,6 +159,7 @@ CMakeFiles/MyRaylibGame.dir/src/render.c.o: /home/emanuel/MISC/Other/Cchess/src/
   /home/emanuel/MISC/Other/Cchess/inc/game.h \
   /home/emanuel/MISC/Other/Cchess/inc/input.h \
   /home/emanuel/MISC/Other/Cchess/inc/render.h \
+  /home/emanuel/MISC/Other/Cchess/inc/resource.h \
   /home/emanuel/MISC/Other/Cchess/raylib/src/raylib.h \
   /usr/include/features-time64.h \
   /usr/include/features.h \
@@ -187,6 +189,13 @@ CMakeFiles/MyRaylibGame.dir/src/render.c.o: /home/emanuel/MISC/Other/Cchess/src/
   /usr/lib/gcc/x86_64-linux-gnu/13/include/stdbool.h \
   /usr/lib/gcc/x86_64-linux-gnu/13/include/stddef.h
 
+CMakeFiles/MyRaylibGame.dir/src/resource.c.o: /home/emanuel/MISC/Other/Cchess/src/resource.c \
+  /home/emanuel/MISC/Other/Cchess/inc/resource.h \
+  /home/emanuel/MISC/Other/Cchess/raylib/src/raylib.h \
+  /usr/include/stdc-predef.h \
+  /usr/lib/gcc/x86_64-linux-gnu/13/include/stdarg.h \
+  /usr/lib/gcc/x86_64-linux-gnu/13/include/stdbool.h
+
 CMakeFiles/MyRaylibGame.dir/src/utils.c.o: /home/emanuel/MISC/Other/Cchess/src/utils.c \
   /home/emanuel/MISC/Other/Cchess/inc/game.h \
   /home/emanuel/MISC/Other/Cchess/inc/utils.h \
@@ -199,6 +208,8 @@ CMakeFiles/MyRaylibGame.dir/src/utils.c.o: /home/emanuel/MISC/Other/Cchess/src/u
 /home/emanuel/MISC/Other/Cchess/src/utils.c:
 
 /home/emanuel/MISC/Other/Cchess/src/piece_moves.c:
+
+/home/emanuel/MISC/Other/Cchess/inc/resource.h:
 
 /home/emanuel/MISC/Other/Cchess/inc/render.h:
 
@@ -221,6 +232,8 @@ CMakeFiles/MyRaylibGame.dir/src/utils.c.o: /home/emanuel/MISC/Other/Cchess/src/u
 /usr/include/x86_64-linux-gnu/bits/floatn-common.h:
 
 /home/emanuel/MISC/Other/Cchess/inc/game_state.h:
+
+/home/emanuel/MISC/Other/Cchess/src/resource.c:
 
 /usr/include/stdio.h:
 

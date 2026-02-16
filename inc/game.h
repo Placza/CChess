@@ -5,8 +5,8 @@
 #define GAME_H
 
 
-#define WINDOW_H 8*63
-#define WINDOW_W 8*63
+#define WINDOW_H 8*63 + 60
+#define WINDOW_W 8*63 + 60
 
 
 typedef enum
@@ -33,6 +33,10 @@ typedef struct
   int valid_moves_top;
   int legal_moves[64][2];
   int legal_moves_top;
+  piece w_captured[16];
+  int w_captured_top;
+  piece b_captured[16];
+  int b_captured_top;
   int turn;
   int selected;
   int p_start_x;
