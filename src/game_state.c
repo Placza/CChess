@@ -42,7 +42,7 @@ void check_capture()
       game.w_captured[game.w_captured_top] = target;
       game.w_captured_top++; 
     }
-    else 
+    else
     {
       game.b_captured[game.b_captured_top] = target;
       game.b_captured_top++;
@@ -53,7 +53,7 @@ void check_capture()
 
 void move_piece()
 {
-  for (int i = 0; i < game.valid_moves_top; i++)
+  for (int i = 0; i < game.legal_moves_top; i++)
   {
     if (
         game.legal_moves[i][0] == game.p_end_x 
@@ -61,7 +61,16 @@ void move_piece()
     )
     {
       check_capture();
-      game.board[game.p_end_y][game.p_end_x] = game.board[game.p_start_y][game.p_start_x];
+
+
+      if (game.board[game.p_start_y][game.p_start_x] == W_PAWN && game.p_start_y == 1)
+      {
+        game.board[game.p_end_y][game.p_end_x] = game.w_promotion;
+      }
+      else 
+      {
+        game.board[game.p_end_y][game.p_end_x] = game.board[game.p_start_y][game.p_start_x];
+      }
       game.board[game.p_start_y][game.p_start_x] = 0;
       game.turn ^= 1;
       return;

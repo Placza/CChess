@@ -3,6 +3,7 @@
 #include "piece_moves.h"
 #include <stdio.h>
 #include "utils.h"
+#include "input.h"
 
 
 static void simulate_piece(int new_x, int new_y);

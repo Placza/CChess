@@ -14,5 +14,4 @@ void handle_input();
 input_state get_input_state();
 
 
-
 #endif

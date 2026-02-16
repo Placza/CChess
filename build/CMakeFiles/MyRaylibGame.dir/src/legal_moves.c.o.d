@@ -30,4 +30,5 @@ CMakeFiles/MyRaylibGame.dir/src/legal_moves.c.o: \
  /usr/include/x86_64-linux-gnu/bits/stdio_lim.h \
  /usr/include/x86_64-linux-gnu/bits/floatn.h \
  /usr/include/x86_64-linux-gnu/bits/floatn-common.h \
- /home/emanuel/MISC/Other/Cchess/inc/utils.h
+ /home/emanuel/MISC/Other/Cchess/inc/utils.h \
+ /home/emanuel/MISC/Other/Cchess/inc/input.h

@@ -40,9 +40,10 @@ void init_game(void)
     },
     .turn = 1,
     .selected = 0,
-    .state = GS_ONGOING
+    .state = GS_ONGOING,
+    .w_promotion = W_BISHOP,
+    .b_promotion = B_BISHOP
   };
-
 }
 
 
@@ -112,4 +113,37 @@ bool is_ally_piece(int x, int y)
   piece p = game.board[y][x];
   return is_ally(p);
 }
-  
+ 
+
+void change_promotion(int p)
+{
+  switch (p) 
+  {
+    case 0:
+      if (game.turn == 1) game.w_promotion = W_BISHOP;
+      else game.b_promotion = B_BISHOP;
+      break;
+    case 1:
+      if (game.turn == 1) game.w_promotion = W_ROOK;
+      else game.b_promotion = B_ROOK;
+      break;
+    case 2:
+      if (game.turn == 1) game.w_promotion = W_KNIGHT;
+      else game.b_promotion = B_KNIGHT;
+      break;
+    case 3:
+      if (game.turn == 1) game.w_promotion = W_QUEEN;
+      else game.b_promotion = B_QUEEN;
+      break;
+    default:
+      break;
+  }
+}
+
+
+bool is_to_be_promoted()
+{
+  piece p = game.board[game.p_start_y][game.p_start_x];
+  if (p == W_PAWN && game.p_start_y == 1) return 1;
+  return 0;
+}

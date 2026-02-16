@@ -32,10 +32,10 @@ static void check_valid_moves_pawn(int color)
   }
 
   if (is_enemy(top_right))
-    add_valid_move(game.p_start_x + color, game.p_start_y - color);
-  
+    add_valid_move(game.p_start_x + color, game.p_start_y - color); 
+   
   if (is_enemy(top_left))
-    add_valid_move(game.p_start_x - color, game.p_start_y - color);
+    add_valid_move(game.p_start_x - color, game.p_start_y - color); 
 }
 
 
@@ -237,7 +237,7 @@ static void check_valid_moves_queen()
 
 
 
-static void check_valid_moves_king()
+void check_valid_moves_king()
 {
   piece p;
   int pos_x;

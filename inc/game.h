@@ -37,6 +37,14 @@ typedef struct
   int w_captured_top;
   piece b_captured[16];
   int b_captured_top;
+
+  piece w_promotion;
+  piece b_promotion;
+
+  int promotion_x;
+  int promotion_y;
+  bool is_promotion;
+
   int turn;
   int selected;
   int p_start_x;
@@ -58,6 +66,8 @@ bool is_legal_move(int x, int y);
 bool is_selected_ally(int x, int y);
 bool is_piece_selected(int x, int y);
 bool is_ally_piece(int x, int y);
+void change_promotion(int p);
+bool is_to_be_promoted();
 
 
 #endif
