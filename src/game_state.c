@@ -64,9 +64,9 @@ void move_piece()
 
 
       if (game.board[game.p_start_y][game.p_start_x] == W_PAWN && game.p_start_y == 1)
-      {
         game.board[game.p_end_y][game.p_end_x] = game.w_promotion;
-      }
+      else if (game.board[game.p_start_y][game.p_start_x] == B_PAWN && game.p_start_y == 6)
+        game.board[game.p_end_y][game.p_end_x] = game.b_promotion;
       else 
       {
         game.board[game.p_end_y][game.p_end_x] = game.board[game.p_start_y][game.p_start_x];

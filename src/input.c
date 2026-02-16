@@ -72,8 +72,6 @@ static void handle_promotion()
       }
     }
   }
-  else
-    game.is_promotion = 0;
 }
 
 
@@ -96,6 +94,7 @@ void handle_input()
         break;
 
       case INPUT_SELECTED:
+        game.is_promotion = 0;
         if (is_legal_move(x_cord, y_cord))
         {
           update_piece(x_cord, y_cord);

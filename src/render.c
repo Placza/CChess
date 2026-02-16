@@ -152,7 +152,12 @@ static void render_captured_pieces()
 static void render_promotion()
 {
   if (game.is_promotion)
-    render_piece(game.w_promotion, game.promotion_x * CELL_SIZE + FRAME_SIZE, game.promotion_y * CELL_SIZE + FRAME_SIZE, 0.5f, (Color){255, 255, 255, 100});
+  {
+    if (game.turn == 1)
+      render_piece(game.w_promotion, game.promotion_x * CELL_SIZE + FRAME_SIZE, game.promotion_y * CELL_SIZE + FRAME_SIZE, 0.5f, (Color){255, 255, 255, 100});
+    else 
+      render_piece(game.b_promotion, game.promotion_x * CELL_SIZE + FRAME_SIZE, game.promotion_y * CELL_SIZE + FRAME_SIZE, 0.5f, (Color){255, 255, 255, 100});
+  }
 }
 
 
