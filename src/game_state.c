@@ -36,17 +36,34 @@ void check_is_check()
 void check_capture()
 {
   piece target = game.board[game.p_end_y][game.p_end_x];
-  if (is_enemy(target))
-    if (game.turn == 0)
+  if (!is_enemy(target)) return;    
+  
+  if (game.turn == 0)
+  {
+    if (target == W_PAWN_GHOST)
+    {
+      game.board[game.p_end_y - 1][game.p_end_x] = 0;
+      game.w_captured[game.w_captured_top] = W_PAWN;
+    }
+    else
     {
       game.w_captured[game.w_captured_top] = target;
-      game.w_captured_top++; 
+    }
+    game.w_captured_top++; 
+  }
+  else
+  {
+    if (target == B_PAWN_GHOST)
+    {
+      game.board[game.p_end_y + 1][game.p_end_x] = 0;
+      game.b_captured[game.b_captured_top] = B_PAWN;
     }
     else
     {
       game.b_captured[game.b_captured_top] = target;
-      game.b_captured_top++;
     }
+    game.b_captured_top++;
+  }
 }
 
 
@@ -61,6 +78,28 @@ void move_piece()
     )
     {
       check_capture();
+      
+      if (game.is_en_passant)
+      {
+        game.board[game.en_passant_y][game.en_passant_x] = 0;
+        game.is_en_passant = 0;
+      }
+
+      if (game.board[game.p_start_y][game.p_start_x] == W_PAWN && game.p_start_y == 6 && game.p_end_y == 4)
+      {
+        game.en_passant_x = game.p_start_x;
+        game.en_passant_y = game.p_start_y - 1;
+        game.board[game.p_start_y - 1][game.p_start_x] = W_PAWN_GHOST;
+        game.is_en_passant = 1;
+      }
+
+      if (game.board[game.p_start_y][game.p_start_x] == B_PAWN && game.p_start_y == 1 && game.p_end_y == 3)
+      {
+        game.en_passant_x = game.p_start_x;
+        game.en_passant_y = game.p_start_y + 1;
+        game.board[game.p_start_y + 1][game.p_start_x] = B_PAWN_GHOST;
+        game.is_en_passant = 1;
+      }
 
 
       if (game.board[game.p_start_y][game.p_start_x] == W_PAWN && game.p_start_y == 1)

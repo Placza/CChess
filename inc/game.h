@@ -13,7 +13,8 @@ typedef enum
 {
   EMPTY,
   W_PAWN, W_ROOK, W_KNIGHT, W_BISHOP, W_QUEEN, W_KING,
-  B_PAWN, B_ROOK, B_KNIGHT, B_BISHOP, B_QUEEN, B_KING
+  B_PAWN, B_ROOK, B_KNIGHT, B_BISHOP, B_QUEEN, B_KING,
+  W_PAWN_GHOST, B_PAWN_GHOST,
 } piece;
 
 
@@ -40,6 +41,10 @@ typedef struct
 
   piece w_promotion;
   piece b_promotion;
+
+  int en_passant_x;
+  int en_passant_y;
+  bool is_en_passant;
 
   int promotion_x;
   int promotion_y;

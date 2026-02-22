@@ -41,7 +41,7 @@ static void render_frame()
 
 
 static void render_piece(piece p, int x, int y, float scale, Color color)
-{
+  {
   switch (p)
   {
     case W_KNIGHT:
@@ -67,7 +67,7 @@ static void render_piece(piece p, int x, int y, float scale, Color color)
     case W_KING:
       DrawTextureEx(assets.w_king, (Vector2){x, y}, 0, scale, color);
       break;
-
+ 
 
 
     case B_KNIGHT:

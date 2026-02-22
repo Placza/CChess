@@ -22,7 +22,7 @@ int main(void)
   }
 
   CloseWindow();
-  unload_assets();
+  //unload_assets();
 
   return 0;
 }

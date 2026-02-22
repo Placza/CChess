@@ -26,11 +26,11 @@ bool is_enemy(piece p)
 {
   if (game.turn == 1)
   {
-    return p >= B_PAWN && p <= B_KING;
+    return p >= B_PAWN && p <= B_KING || p == B_PAWN_GHOST;
   }
   else
   {
-    return p >= W_PAWN && p <= W_KING;
+    return p >= W_PAWN && p <= W_KING || p == W_PAWN_GHOST;
   }
 }
 
