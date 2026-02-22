@@ -2,6 +2,7 @@
 #include "piece_moves.h"
 #include "utils.h"
 #include "game.h"
+#include <stdio.h>
 
 
 
@@ -242,6 +243,47 @@ void check_valid_moves_king()
   piece p;
   int pos_x;
   int pos_y;
+
+  if 
+  (
+      !game.w_king_moved 
+  &&  !game.r_w_rook_moved
+  &&  game.board[7][5] == 0
+  &&  game.board[7][6] == 0
+  )
+    add_valid_move(6, 7);
+  
+  if 
+  (
+      !game.w_king_moved 
+  &&  !game.l_w_rook_moved
+  &&  game.board[7][3] == 0
+  &&  game.board[7][2] == 0
+  &&  game.board[7][1] == 0
+  )
+    add_valid_move(2, 7);
+
+
+  if 
+  (
+      !game.b_king_moved 
+  &&  !game.r_b_rook_moved
+  &&  game.board[0][5] == 0
+  &&  game.board[0][6] == 0
+  )
+    add_valid_move(6, 0);
+  
+
+  if 
+  (
+      !game.b_king_moved 
+  &&  !game.l_b_rook_moved
+  &&  game.board[0][3] == 0
+  &&  game.board[0][2] == 0
+  &&  game.board[0][1] == 0
+  )
+    add_valid_move(2, 0);
+
 
 
   pos_x = game.p_start_x;

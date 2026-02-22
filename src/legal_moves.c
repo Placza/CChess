@@ -6,9 +6,38 @@
 #include "input.h"
 
 
-static void simulate_piece(int new_x, int new_y);
+static bool simulate_piece(int new_x, int new_y);
 int is_check();
 int is_checkmate();
+static void add_legal_moves(int x, int y);
+
+
+static void check_w_kingside()
+{
+  if (is_check() || simulate_piece(5, 7) || simulate_piece(6, 7)) return;
+  add_legal_moves(6, 7);
+}
+
+
+static void check_w_queenside()
+{
+  if (is_check() || simulate_piece(3, 7) || simulate_piece(2, 7) || simulate_piece(1, 7)) return;
+  add_legal_moves(2, 7);
+}
+
+
+static void check_b_kingside()
+{
+  if (is_check() || simulate_piece(5, 0) || simulate_piece(6, 0)) return;
+  add_legal_moves(6, 0);
+}
+
+
+static void check_b_queenside()
+{
+  if (is_check() || simulate_piece(3, 0) || simulate_piece(2, 0) || simulate_piece(1, 0)) return;
+  add_legal_moves(2, 0);
+}
 
 
 
@@ -22,7 +51,31 @@ void check_legal_moves()
   {
     int new_x = game.valid_moves[i][0];
     int new_y = game.valid_moves[i][1];
-    simulate_piece(new_x, new_y);
+
+    if (selected == W_KING && !game.w_king_moved && new_x == 6 && new_y == 7)
+    {
+      check_w_kingside();
+      continue;
+    }
+    else if (selected == W_KING && !game.w_king_moved && new_x == 2 && new_y == 7)
+    {
+      check_w_queenside();
+      continue;
+    }
+    else if (selected == B_KING && !game.b_king_moved && new_x == 6 && new_y == 0)
+    {
+      check_b_kingside();
+      continue;
+    }
+    else if (selected == B_KING && !game.b_king_moved && new_x == 2 && new_y == 0)
+    {
+      check_b_queenside();
+      continue;
+    }
+
+
+    if (!simulate_piece(new_x, new_y))
+      add_legal_moves(new_x, new_y);
   }
 }
 
@@ -40,18 +93,20 @@ static void add_legal_moves(int x, int y)
 
 
 
-static void simulate_piece(int new_x, int new_y)
+static bool simulate_piece(int x, int y)
 {
-  piece p = game.board[new_y][new_x];
+  piece p = game.board[y][x];
+  bool check;
 
-  game.board[new_y][new_x] = game.board[game.p_start_y][game.p_start_x];
+  game.board[y][x] = game.board[game.p_start_y][game.p_start_x];
   game.board[game.p_start_y][game.p_start_x] = 0;
 
-  if (!is_check())
-    add_legal_moves(new_x, new_y);
+  check = is_check();
 
-  game.board[game.p_start_y][game.p_start_x] = game.board[new_y][new_x];
-  game.board[new_y][new_x] = p;
+  game.board[game.p_start_y][game.p_start_x] = game.board[y][x];
+  game.board[y][x] = p;
+
+  return check;
 }
 
 

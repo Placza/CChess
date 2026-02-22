@@ -46,6 +46,13 @@ typedef struct
   int en_passant_y;
   bool is_en_passant;
 
+  bool r_b_rook_moved;
+  bool l_b_rook_moved;
+  bool r_w_rook_moved;
+  bool l_w_rook_moved;
+  bool b_king_moved;
+  bool w_king_moved;
+
   int promotion_x;
   int promotion_y;
   bool is_promotion;

@@ -42,7 +42,13 @@ void init_game(void)
     .selected = 0,
     .state = GS_ONGOING,
     .w_promotion = W_BISHOP,
-    .b_promotion = B_BISHOP
+    .b_promotion = B_BISHOP,
+    .w_king_moved = 0,
+    .b_king_moved = 0,
+    .r_w_rook_moved = 0,
+    .l_w_rook_moved = 0,
+    .r_b_rook_moved = 0,
+    .l_b_rook_moved = 0
   };
 }
 

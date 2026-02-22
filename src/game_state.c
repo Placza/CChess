@@ -67,6 +67,92 @@ void check_capture()
 }
 
 
+static void w_kingside()
+{
+  if (!game.w_king_moved && game.board[game.p_start_y][game.p_start_x] == W_KING && game.p_end_x == 6 && game.p_end_y == 7)
+  {
+    game.board[7][7] = 0;
+    game.board[7][5] = W_ROOK;
+  }
+}
+
+
+static void w_queenside()
+{
+  if (!game.w_king_moved && game.board[game.p_start_y][game.p_start_x] == W_KING && game.p_end_x == 2 && game.p_end_y == 7)
+  {
+    game.board[7][0] = 0;
+    game.board[7][3] = W_ROOK;
+  }
+}
+
+static void b_kingside()
+{
+  if (!game.b_king_moved && game.board[game.p_start_y][game.p_start_x] == B_KING && game.p_end_x == 6 && game.p_end_y == 0)
+  {
+    game.board[0][7] = 0;
+    game.board[0][5] = B_ROOK;
+  }
+}
+
+
+static void b_queenside()
+{
+  if (!game.b_king_moved && game.board[game.p_start_y][game.p_start_x] == B_KING && game.p_end_x == 2 && game.p_end_y == 0)
+  {
+    game.board[0][0] = 0;
+    game.board[0][3] = B_ROOK;
+  }
+}
+
+
+static void check_kings_and_rooks_moved()
+{
+  w_kingside();
+  w_queenside();
+  b_kingside();
+  b_queenside();
+
+  if (!game.r_b_rook_moved && game.p_start_x == 7 && game.p_start_y == 0)
+    game.r_b_rook_moved = 1;
+  else if (!game.l_b_rook_moved && game.p_start_x == 0 && game.p_start_y == 0)
+    game.l_b_rook_moved = 1;
+  else if (!game.r_w_rook_moved && game.p_start_x == 7 && game.p_start_y == 7)
+    game.r_w_rook_moved = 1;
+  else if (!game.l_w_rook_moved && game.p_start_x == 0 && game.p_start_y == 7)
+    game.l_w_rook_moved = 1;
+  else if (!game.w_king_moved && game.p_start_x == 4 && game.p_start_y == 7) 
+    game.w_king_moved = 1;
+  else if (!game.b_king_moved && game.p_start_x == 4 && game.p_start_y == 0)
+    game.b_king_moved = 1;
+}
+
+
+static void check_en_passant()
+{
+  if (game.is_en_passant)
+  {
+    game.board[game.en_passant_y][game.en_passant_x] = 0;
+    game.is_en_passant = 0;
+  }
+
+  if (game.board[game.p_start_y][game.p_start_x] == W_PAWN && game.p_start_y == 6 && game.p_end_y == 4)
+  {
+    game.en_passant_x = game.p_start_x;
+    game.en_passant_y = game.p_start_y - 1;
+    game.board[game.p_start_y - 1][game.p_start_x] = W_PAWN_GHOST;
+    game.is_en_passant = 1;
+  }
+
+  if (game.board[game.p_start_y][game.p_start_x] == B_PAWN && game.p_start_y == 1 && game.p_end_y == 3)
+  {
+    game.en_passant_x = game.p_start_x;
+    game.en_passant_y = game.p_start_y + 1;
+    game.board[game.p_start_y + 1][game.p_start_x] = B_PAWN_GHOST;
+    game.is_en_passant = 1;
+  }
+}
+
 
 void move_piece()
 {
@@ -78,28 +164,9 @@ void move_piece()
     )
     {
       check_capture();
-      
-      if (game.is_en_passant)
-      {
-        game.board[game.en_passant_y][game.en_passant_x] = 0;
-        game.is_en_passant = 0;
-      }
-
-      if (game.board[game.p_start_y][game.p_start_x] == W_PAWN && game.p_start_y == 6 && game.p_end_y == 4)
-      {
-        game.en_passant_x = game.p_start_x;
-        game.en_passant_y = game.p_start_y - 1;
-        game.board[game.p_start_y - 1][game.p_start_x] = W_PAWN_GHOST;
-        game.is_en_passant = 1;
-      }
-
-      if (game.board[game.p_start_y][game.p_start_x] == B_PAWN && game.p_start_y == 1 && game.p_end_y == 3)
-      {
-        game.en_passant_x = game.p_start_x;
-        game.en_passant_y = game.p_start_y + 1;
-        game.board[game.p_start_y + 1][game.p_start_x] = B_PAWN_GHOST;
-        game.is_en_passant = 1;
-      }
+    
+      check_kings_and_rooks_moved();
+      check_en_passant();  
 
 
       if (game.board[game.p_start_y][game.p_start_x] == W_PAWN && game.p_start_y == 1)
