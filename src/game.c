@@ -58,6 +58,7 @@ void init_game(void)
 
 bool select_piece(int x, int y)
 {
+  if (x < 0 || x > 7 || y < 0 || y > 7) return 0;
   game.p_start_x = x;
   game.p_start_y = y;
 
