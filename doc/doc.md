@@ -19,18 +19,62 @@ The way the app communicates internally is as follows:
             ____________________      _______________________        _______________
             |                  |      |                     |        |             |
             |    User input    |----->|    Input manager    |------->|    Client   |
-            |__________________|      |       (input)       |        |   (client)  |
-                                      |_____________________|        |_____________|
-                                                 |                          |
-                                                 |                          |
-                                                 |                          |
-                                                 V                          V
-                                        ______________               __________________      _____________________
-                                        |            |               |                |      |                   |
+            |__________________|      |       (input)       |     -->|   (client)  |
+                                      |_____________________|  (2)|  |_____________|
+                                                 |                |         |
+                                                 |                |         |
+                                                 |                |         |
+                                                 V                |         V
+                                        ______________ (1)        |  __________________      _____________________
+                                        |            |<-----------x  |                |      |                   |
                                         |    Game    |-------------->|    Renderer    |----->|    User output    |
                                         |   (game)   |               |________________|      |___________________|
                                         |____________|
+            
+            (1) The game changes the state of the app (when the game ends, change the state; display different thing if the player losses or wins) 
+            (2) The app controls the game by reseting the game when it starts
 
+
+
+
+The game itself communicates as follows:
+
+
+
+    
+                            ______________________    
+                            |                    |<----->Client  
+                            |        Game        |
+                            |____________________|------->Renderer
+                                ^           |
+                                |           |
+                                |           |
+                    updates the |           | exposes the
+                    game state  |           | game state
+                                |           |
+                                |           |
+                                |           V
+                            ______________________
+                            |                    |
+                            |    Game maanger    |
+                            |____________________|
+                                ^           |
+                                |           |
+                                |           |
+         tells the game manager |           | exposes structures and functions
+             what actions to do |           | to allow for the user to
+                                |           | interatively controll the game
+                                |           |
+                                |           V
+                            ______________________
+                            |                    |    
+                            |     Game input     |
+                            |____________________|
+                                      ^
+                                      |
+                                    Input
+    
+                                            
 
 
 
