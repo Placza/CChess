@@ -1,57 +1,21 @@
 [
 {
   "directory": "/home/emanuel/MISC/Other/Cchess/build",
-  "command": "/usr/bin/cc -DGRAPHICS_API_OPENGL_33 -DPLATFORM_DESKTOP -I/home/emanuel/MISC/Other/Cchess/src -I/home/emanuel/MISC/Other/Cchess/inc -I/home/emanuel/MISC/Other/Cchess/raylib/src -std=gnu11 -o CMakeFiles/MyRaylibGame.dir/src/game.c.o -c /home/emanuel/MISC/Other/Cchess/src/game.c",
-  "file": "/home/emanuel/MISC/Other/Cchess/src/game.c",
-  "output": "CMakeFiles/MyRaylibGame.dir/src/game.c.o"
+  "command": "/usr/bin/cc -DGRAPHICS_API_OPENGL_33 -DPLATFORM_DESKTOP -I/home/emanuel/MISC/Other/Cchess/src_new -I/home/emanuel/MISC/Other/Cchess/inc_new -I/home/emanuel/MISC/Other/Cchess/raylib/src -std=gnu11 -o CMakeFiles/MyRaylibGame.dir/src_new/game.c.o -c /home/emanuel/MISC/Other/Cchess/src_new/game.c",
+  "file": "/home/emanuel/MISC/Other/Cchess/src_new/game.c",
+  "output": "CMakeFiles/MyRaylibGame.dir/src_new/game.c.o"
 },
 {
   "directory": "/home/emanuel/MISC/Other/Cchess/build",
-  "command": "/usr/bin/cc -DGRAPHICS_API_OPENGL_33 -DPLATFORM_DESKTOP -I/home/emanuel/MISC/Other/Cchess/src -I/home/emanuel/MISC/Other/Cchess/inc -I/home/emanuel/MISC/Other/Cchess/raylib/src -std=gnu11 -o CMakeFiles/MyRaylibGame.dir/src/game_state.c.o -c /home/emanuel/MISC/Other/Cchess/src/game_state.c",
-  "file": "/home/emanuel/MISC/Other/Cchess/src/game_state.c",
-  "output": "CMakeFiles/MyRaylibGame.dir/src/game_state.c.o"
+  "command": "/usr/bin/cc -DGRAPHICS_API_OPENGL_33 -DPLATFORM_DESKTOP -I/home/emanuel/MISC/Other/Cchess/src_new -I/home/emanuel/MISC/Other/Cchess/inc_new -I/home/emanuel/MISC/Other/Cchess/raylib/src -std=gnu11 -o CMakeFiles/MyRaylibGame.dir/src_new/main.c.o -c /home/emanuel/MISC/Other/Cchess/src_new/main.c",
+  "file": "/home/emanuel/MISC/Other/Cchess/src_new/main.c",
+  "output": "CMakeFiles/MyRaylibGame.dir/src_new/main.c.o"
 },
 {
   "directory": "/home/emanuel/MISC/Other/Cchess/build",
-  "command": "/usr/bin/cc -DGRAPHICS_API_OPENGL_33 -DPLATFORM_DESKTOP -I/home/emanuel/MISC/Other/Cchess/src -I/home/emanuel/MISC/Other/Cchess/inc -I/home/emanuel/MISC/Other/Cchess/raylib/src -std=gnu11 -o CMakeFiles/MyRaylibGame.dir/src/input.c.o -c /home/emanuel/MISC/Other/Cchess/src/input.c",
-  "file": "/home/emanuel/MISC/Other/Cchess/src/input.c",
-  "output": "CMakeFiles/MyRaylibGame.dir/src/input.c.o"
-},
-{
-  "directory": "/home/emanuel/MISC/Other/Cchess/build",
-  "command": "/usr/bin/cc -DGRAPHICS_API_OPENGL_33 -DPLATFORM_DESKTOP -I/home/emanuel/MISC/Other/Cchess/src -I/home/emanuel/MISC/Other/Cchess/inc -I/home/emanuel/MISC/Other/Cchess/raylib/src -std=gnu11 -o CMakeFiles/MyRaylibGame.dir/src/legal_moves.c.o -c /home/emanuel/MISC/Other/Cchess/src/legal_moves.c",
-  "file": "/home/emanuel/MISC/Other/Cchess/src/legal_moves.c",
-  "output": "CMakeFiles/MyRaylibGame.dir/src/legal_moves.c.o"
-},
-{
-  "directory": "/home/emanuel/MISC/Other/Cchess/build",
-  "command": "/usr/bin/cc -DGRAPHICS_API_OPENGL_33 -DPLATFORM_DESKTOP -I/home/emanuel/MISC/Other/Cchess/src -I/home/emanuel/MISC/Other/Cchess/inc -I/home/emanuel/MISC/Other/Cchess/raylib/src -std=gnu11 -o CMakeFiles/MyRaylibGame.dir/src/main.c.o -c /home/emanuel/MISC/Other/Cchess/src/main.c",
-  "file": "/home/emanuel/MISC/Other/Cchess/src/main.c",
-  "output": "CMakeFiles/MyRaylibGame.dir/src/main.c.o"
-},
-{
-  "directory": "/home/emanuel/MISC/Other/Cchess/build",
-  "command": "/usr/bin/cc -DGRAPHICS_API_OPENGL_33 -DPLATFORM_DESKTOP -I/home/emanuel/MISC/Other/Cchess/src -I/home/emanuel/MISC/Other/Cchess/inc -I/home/emanuel/MISC/Other/Cchess/raylib/src -std=gnu11 -o CMakeFiles/MyRaylibGame.dir/src/piece_moves.c.o -c /home/emanuel/MISC/Other/Cchess/src/piece_moves.c",
-  "file": "/home/emanuel/MISC/Other/Cchess/src/piece_moves.c",
-  "output": "CMakeFiles/MyRaylibGame.dir/src/piece_moves.c.o"
-},
-{
-  "directory": "/home/emanuel/MISC/Other/Cchess/build",
-  "command": "/usr/bin/cc -DGRAPHICS_API_OPENGL_33 -DPLATFORM_DESKTOP -I/home/emanuel/MISC/Other/Cchess/src -I/home/emanuel/MISC/Other/Cchess/inc -I/home/emanuel/MISC/Other/Cchess/raylib/src -std=gnu11 -o CMakeFiles/MyRaylibGame.dir/src/render.c.o -c /home/emanuel/MISC/Other/Cchess/src/render.c",
-  "file": "/home/emanuel/MISC/Other/Cchess/src/render.c",
-  "output": "CMakeFiles/MyRaylibGame.dir/src/render.c.o"
-},
-{
-  "directory": "/home/emanuel/MISC/Other/Cchess/build",
-  "command": "/usr/bin/cc -DGRAPHICS_API_OPENGL_33 -DPLATFORM_DESKTOP -I/home/emanuel/MISC/Other/Cchess/src -I/home/emanuel/MISC/Other/Cchess/inc -I/home/emanuel/MISC/Other/Cchess/raylib/src -std=gnu11 -o CMakeFiles/MyRaylibGame.dir/src/resource.c.o -c /home/emanuel/MISC/Other/Cchess/src/resource.c",
-  "file": "/home/emanuel/MISC/Other/Cchess/src/resource.c",
-  "output": "CMakeFiles/MyRaylibGame.dir/src/resource.c.o"
-},
-{
-  "directory": "/home/emanuel/MISC/Other/Cchess/build",
-  "command": "/usr/bin/cc -DGRAPHICS_API_OPENGL_33 -DPLATFORM_DESKTOP -I/home/emanuel/MISC/Other/Cchess/src -I/home/emanuel/MISC/Other/Cchess/inc -I/home/emanuel/MISC/Other/Cchess/raylib/src -std=gnu11 -o CMakeFiles/MyRaylibGame.dir/src/utils.c.o -c /home/emanuel/MISC/Other/Cchess/src/utils.c",
-  "file": "/home/emanuel/MISC/Other/Cchess/src/utils.c",
-  "output": "CMakeFiles/MyRaylibGame.dir/src/utils.c.o"
+  "command": "/usr/bin/cc -DGRAPHICS_API_OPENGL_33 -DPLATFORM_DESKTOP -I/home/emanuel/MISC/Other/Cchess/src_new -I/home/emanuel/MISC/Other/Cchess/inc_new -I/home/emanuel/MISC/Other/Cchess/raylib/src -std=gnu11 -o CMakeFiles/MyRaylibGame.dir/src_new/render.c.o -c /home/emanuel/MISC/Other/Cchess/src_new/render.c",
+  "file": "/home/emanuel/MISC/Other/Cchess/src_new/render.c",
+  "output": "CMakeFiles/MyRaylibGame.dir/src_new/render.c.o"
 },
 {
   "directory": "/home/emanuel/MISC/Other/Cchess/build/raylib/raylib",

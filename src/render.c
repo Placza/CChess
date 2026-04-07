@@ -167,14 +167,14 @@ void render_board()
   BeginDrawing();
   
     ClearBackground(RAYWHITE);
-    render_background();
+    //render_background();
     render_pattern();
-    render_frame();
-    render_selection();
-    render_legal_moves();
+    //render_frame();
+    //render_selection();
+    //render_legal_moves();
     render_pieces();
-    render_promotion();
-    render_captured_pieces();
+    //render_promotion();
+    //render_captured_pieces();
 
   EndDrawing();
 }

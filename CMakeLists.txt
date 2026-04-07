@@ -11,7 +11,7 @@ add_subdirectory(raylib)
 # find_package(raylib REQUIRED)
 
 # Automatski dodaj sve .c fajlove iz src/ direktorija
-file(GLOB_RECURSE SOURCES "src/*.c")
+file(GLOB_RECURSE SOURCES "src_new/*.c")
 
 # Executable
 add_executable(${PROJECT_NAME} ${SOURCES})
@@ -20,7 +20,7 @@ add_executable(${PROJECT_NAME} ${SOURCES})
 target_link_libraries(${PROJECT_NAME} raylib)
 
 # Include direktoriji - automatski uključuje sve .h fajlove iz src/
-target_include_directories(${PROJECT_NAME} PRIVATE src inc)
+target_include_directories(${PROJECT_NAME} PRIVATE src_new inc_new)
 
 # Linux specific libraries
 if(UNIX AND NOT APPLE)

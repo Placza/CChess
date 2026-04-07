@@ -43,9 +43,9 @@
  *                          empty square to a non-empty square => returns 1 for good move
  *                          and -1 for a not good move
  *
- * - capture_piece(piece) : internal function, will be called by move_piece if another
- *                          piece moves to an already occupied square; doesn't care about
- *                          color
+ * - (~)capture_piece(piece) : internal function, will be called by move_piece if another
+ *                             piece moves to an already occupied square; doesn't care about
+ *                             color
  *
  */ 
 
@@ -70,70 +70,23 @@ typedef enum
 
 typedef struct
 {
-  piece board[8][8];
-  game_state state;
-  int valid_moves[64][2]; // (-) move to game manager
-  int valid_moves_top; // (-) move to game manager (consider creating a structure for a po
-                       // sition instead of storing an array of arrays
-  int legal_moves[64][2]; // (-) move to game manager
-  int legal_moves_top; // (-) move to game manager
-  piece w_captured[16]; // (+) will keep it here
-  int w_captured_top;  // (+) will keep it here
-  piece b_captured[16]; // (+) will keep it here
-  int b_captured_top; // (+) will keep it here
+  piece board[8][8]; // defines the game board
+  game_state state; // stores if the game is ongoing, check, checkmate or a stalemate
 
-  piece w_promotion; // tricky, will have to inspect
-  piece b_promotion; // same here
+  piece w_captured[16]; // keeps track of white captured peaces
+  int w_captured_top;
+  piece b_captured[16]; // keeps track of black captured pecaes
+  int b_captured_top; 
 
-  int en_passant_x; // tricky
-  int en_passant_y; // tricky
-  bool is_en_passant; // tricky
-
-  bool r_b_rook_moved; // tricky
-  bool l_b_rook_moved; // tricky
-  bool r_w_rook_moved; // tricky
-  bool l_w_rook_moved; // tricky
-  bool b_king_moved; // tricky
-  bool w_king_moved; // tricky
-
-  int promotion_x; // tricky
-  int promotion_y; // tricky
-  bool is_promotion; // tricky
-                     //
-                     //
-                     //
-                     // All the tricky fields could theoretically be moved to the
-                     // game manager as they don't really describe the game state
-                     // but are here to keep track of valid and legal moves that
-                     // the game doesn't care about
-                     //
-                     //
-
-  int turn; // (+) here
-  int selected; // not sure what that is lol
-  int p_start_x; // this is important for the game state, but then again not describes it
-  int p_start_y; // same as p_start_x
-  int p_end_x; // same as previous
-  int p_end_y; // same as previous
+  int turn; // keeps track of which color's turn it is
 } Game;
 
 
 extern Game game;
 
 
-void init_game(); // (+) keep here (IMPORTANT)
-bool select_piece(int x, int y); // (-) if p_start and p_end are being move to the 
-                                 // game manager, no point in keeping track of the
-                                 // selected piece
-void deselect_piece(); // (-) same as for select_piece
-void update_piece(int x, int y); // (-) same reason
-bool has_selection(); // (-) same
-bool is_legal_move(int x, int y); // (-) def same
-bool is_selected_ally(int x, int y); // (-) same
-bool is_piece_selected(int x, int y); // (-) same
-bool is_ally_piece(int x, int y); // (-) same
-void change_promotion(int p); // (-) same (should be private) 
-bool is_to_be_promoted(); // (-) same (should be private)
+void init_game(); // initializes the game state
+int move_piece(int x0, int y0, int x1, int y1); // moves one piece from one square to another
 
 
 

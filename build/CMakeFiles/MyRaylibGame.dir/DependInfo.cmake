@@ -8,15 +8,9 @@ set(CMAKE_DEPENDS_LANGUAGES
 
 # The set of dependency files which are needed:
 set(CMAKE_DEPENDS_DEPENDENCY_FILES
-  "/home/emanuel/MISC/Other/Cchess/src/game.c" "CMakeFiles/MyRaylibGame.dir/src/game.c.o" "gcc" "CMakeFiles/MyRaylibGame.dir/src/game.c.o.d"
-  "/home/emanuel/MISC/Other/Cchess/src/game_state.c" "CMakeFiles/MyRaylibGame.dir/src/game_state.c.o" "gcc" "CMakeFiles/MyRaylibGame.dir/src/game_state.c.o.d"
-  "/home/emanuel/MISC/Other/Cchess/src/input.c" "CMakeFiles/MyRaylibGame.dir/src/input.c.o" "gcc" "CMakeFiles/MyRaylibGame.dir/src/input.c.o.d"
-  "/home/emanuel/MISC/Other/Cchess/src/legal_moves.c" "CMakeFiles/MyRaylibGame.dir/src/legal_moves.c.o" "gcc" "CMakeFiles/MyRaylibGame.dir/src/legal_moves.c.o.d"
-  "/home/emanuel/MISC/Other/Cchess/src/main.c" "CMakeFiles/MyRaylibGame.dir/src/main.c.o" "gcc" "CMakeFiles/MyRaylibGame.dir/src/main.c.o.d"
-  "/home/emanuel/MISC/Other/Cchess/src/piece_moves.c" "CMakeFiles/MyRaylibGame.dir/src/piece_moves.c.o" "gcc" "CMakeFiles/MyRaylibGame.dir/src/piece_moves.c.o.d"
-  "/home/emanuel/MISC/Other/Cchess/src/render.c" "CMakeFiles/MyRaylibGame.dir/src/render.c.o" "gcc" "CMakeFiles/MyRaylibGame.dir/src/render.c.o.d"
-  "/home/emanuel/MISC/Other/Cchess/src/resource.c" "CMakeFiles/MyRaylibGame.dir/src/resource.c.o" "gcc" "CMakeFiles/MyRaylibGame.dir/src/resource.c.o.d"
-  "/home/emanuel/MISC/Other/Cchess/src/utils.c" "CMakeFiles/MyRaylibGame.dir/src/utils.c.o" "gcc" "CMakeFiles/MyRaylibGame.dir/src/utils.c.o.d"
+  "/home/emanuel/MISC/Other/Cchess/src_new/game.c" "CMakeFiles/MyRaylibGame.dir/src_new/game.c.o" "gcc" "CMakeFiles/MyRaylibGame.dir/src_new/game.c.o.d"
+  "/home/emanuel/MISC/Other/Cchess/src_new/main.c" "CMakeFiles/MyRaylibGame.dir/src_new/main.c.o" "gcc" "CMakeFiles/MyRaylibGame.dir/src_new/main.c.o.d"
+  "/home/emanuel/MISC/Other/Cchess/src_new/render.c" "CMakeFiles/MyRaylibGame.dir/src_new/render.c.o" "gcc" "CMakeFiles/MyRaylibGame.dir/src_new/render.c.o.d"
   )
 
 # Targets to which this target links which contain Fortran sources.

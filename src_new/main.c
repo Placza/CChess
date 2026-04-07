@@ -1,7 +1,7 @@
 #include <raylib.h>
+#include <stdio.h>
 #include "game.h"
-#include "input.h"
-#include "render.h"
+#include "game_renderer.h"
 #include "resource.h"
 
 
@@ -18,7 +18,7 @@ int main(void)
   while (!WindowShouldClose())  
   {
     render_board();
-    handle_input();
+    //handle_input();
   }
 
   CloseWindow();
