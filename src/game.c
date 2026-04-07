@@ -25,8 +25,6 @@ Game game;
 
 void init_game(void)
 {
-
-
   game = (Game){
     .board = {
       {B_ROOK, B_KNIGHT, B_BISHOP, B_QUEEN, B_KING, B_BISHOP, B_KNIGHT, B_ROOK},
