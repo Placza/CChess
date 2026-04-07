@@ -1,4 +1,4 @@
-## Client
+## CLIENT
 
 The client app can be divided into these parts:
 - **game**: the actual board and mechanism behind the game of chess; exposes a structure that the rest of the app can communicate with
