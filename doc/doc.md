@@ -19,7 +19,7 @@ The way the app communicates internally is as follows:
             ____________________      _______________________        _______________
             |                  |      |                     |        |             |
             |    User input    |----->|    Input manager    |------->|    Client   |
-            |__________________|      |       (input)       |     -->|   (client)  |
+            |__________________|      |       (input)       |     x->|   (client)  |
                                       |_____________________|  (2)|  |_____________|
                                                  |                |         |
                                                  |                |         |
